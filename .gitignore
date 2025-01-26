@@ -1,0 +1,6 @@
+/data
+/.venv
+/.env
+/database
+/__pychace__
+/excel_data
