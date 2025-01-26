@@ -23,14 +23,3 @@ ENV PYTHONUNBUFFERED=1
 
 # Run the FastAPI application with Uvicorn
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
-
-# how to build and run docker 
-
-# docker pull python:3.11-slim
-
-# sudo docker build -t  llm-fastapi-app . 
-
-# sudo docker run -d -p 8000:8000 llm-fastapi-app 
-
-# custom model gpt
-# sudo docker run -d -p 8000:8000 -e MODEL_NAME=gpt-3.5-turbo llm-fastapi-app
